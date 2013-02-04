@@ -1,0 +1,27 @@
+// Import all the needed files in this Base style sheet
+@import "compass";
+
+@import "partials/normalize";
+@import "partials/variables";
+@import "partials/mixins";
+@import "partials/typography";
+
+
+@import "susy";
+
+@import "partials/grid";
+@import "partials/layout";
+
+@import "sassy-noise";
+@import "harsh";
+
+body {
+	background: $bgcolor;
+	font-size: $basefont-size;
+}
+
+.container {
+  @include container;
+  overflow: hidden;
+}
+
